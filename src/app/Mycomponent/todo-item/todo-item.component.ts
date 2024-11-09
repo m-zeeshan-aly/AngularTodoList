@@ -11,6 +11,7 @@ import { NgClass } from '@angular/common';
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo!:Todo;
+  @Input() i! : number;
   @Output() todoDelete:   EventEmitter<Todo> = new EventEmitter();
   @Output() todoCheckBox: EventEmitter<Todo> = new EventEmitter();
   constructor(){
